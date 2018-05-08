@@ -1,0 +1,284 @@
+/*@import "variable.css";*/
+/** {*/
+    /*margin: 0;*/
+    /*padding: 0;*/
+    /*box-sizing: border-box;*/
+/*}*/
+
+/*html, body {*/
+    /*font-family: sans-serif;*/
+/*}*/
+
+
+/*!*h1 {*!*/
+    /*!*text-align: center;*!*/
+    /*!*background-color: #456fa0;*!*/
+    /*!*padding: 20px 10px;*!*/
+    /*!*color: #fff;*!*/
+    /*!*text-transform: uppercase;*!*/
+/*!*}*!*/
+
+/*.boxes {*/
+    /*width: 100%;*/
+    /*text-align: center;*/
+    /*background-color: #d3e0e3;*/
+    /*!*padding: 20px;*!*/
+    /*!*position: relative;*!*/
+/*}*/
+
+/*.box {*/
+    /*font-weight: bold;*/
+    /*width: 60%;*/
+    /*margin: 0 auto;*/
+    /*padding: 40px;*/
+    /*font-size: 2.4em;*/
+/*}*/
+
+/*.box1 {*/
+    /*background-color: var(--box1);*/
+    /*!*position: relative;*!*/
+    /*!*top: 150px;*!*/
+    /*!*left: 50px;*!*/
+    /*!*move box1 from top-left corner his default position*!*/
+    /*!*padding: 80px;*!*/
+/*}*/
+
+/*.box2 {*/
+    /*background-color: var(--box2);*/
+    /*!*position: absolute;*!*/
+
+    /*!*position: static; default value*!*/
+
+    /*!*position: fixed;*!*/
+    /*!*bottom: 150px;*!*/
+    /*!*right: 0;*!*/
+    /*!*fixed position no mater what do*!*/
+    /*!*position: absolute;*!*/
+    /*!*top:100px;*!*/
+    /*!*left: 0;*!*/
+    /*!*z-index: 5;*!*/
+    /*!*position: relative;*!*/
+
+/*}*/
+
+    /*.box3 {*/
+    /*background-color: var(--box3);*/
+    /*!*position: fixed;*!*/
+    /*!*top: 10px;*!*/
+    /*!*left: 60px;*!*/
+    /*!*move box3 from first not static position div or start browser window*!*/
+        /*!*z-index: 2;*!*/
+        /*!*position: absolute;*!*/
+/*}*/
+
+/*.box4 {*/
+    /*background-color: var(--box4);*/
+    /*!*position: absolute;*!*/
+/*}*/
+
+/*.box5 {*/
+    /*background-color: var(--box1);*/
+    /*!*position: absolute;*!*/
+/*}*/
+
+/*.longbox {*/
+    /*width: 100%;*/
+    /*!*display: flex;*!*/
+    /*!*flex-direction: column;*!*/
+    /*!*justify-content: center;*!*/
+    /*background-color: gray;*/
+    /*height: 1000px;*/
+    /*text-align: center;*/
+    /*font-size: 2.5em;*/
+    /*font-weight: bold;*/
+    /*position: relative;*/
+/*}*/
+    /*!*!*center absolute*!*!*/
+/*.center-box {*/
+    /*width: 500px;*/
+    /*background-color: brown;*/
+    /*margin-bottom: 20px;*/
+
+/*}*/
+/*.center-box:last-child {*/
+    /*margin-bottom: 0;*/
+/*}*/
+
+/*.center {*/
+    /*position: absolute;*/
+    /*top: 50%;*/
+    /*left: 50%;*/
+    /*transform: translate(-50%, -50%);*/
+/*}*/
+
+/*!*.box {*!*/
+/*!*font-weight: bold;*!*/
+/*!*width: 60%;*!*/
+/*!*margin: 0 auto;*!*/
+/*!*padding: 40px;*!*/
+/*!*font-size: 2.4em;*!*/
+    /*!*background-color: var(--box3);*!*/
+/*!*}*!*/
+
+/*!*.box1 {*!*/
+    /*!*background-color: var(--box1);*!*/
+/*!*}*!*/
+
+/*!*.box2 {*!*/
+    /*!*background-color: var(--box2);*!*/
+/*!*}*!*/
+/*.test {*/
+    /*height: 100px;*/
+    /*background-color: yellow;*/
+/*}*/
+/*.container {*/
+    /*!*padding: 100px;*!*/
+    /*position: relative;*/
+    /*margin-top: 20px;*/
+/*}*/
+
+/*!*.sub-box {*!*/
+    /*!*background-color: #fff;*!*/
+/*!*}*!*/
+
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    display: table;
+    content: '';
+    clear: both;
+}
+
+.wrapper {
+    padding: 38px 0 50px;
+    background-color: #000;
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.header {
+    background-color: red;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+
+
+.logo {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: grey;
+    font-size: 50px;
+    float: left;
+}
+
+.logo:first-letter {
+    color: green;
+}
+
+.menu {
+    float: right;
+}
+
+ul {
+    list-style: none;
+}
+ a {
+     text-decoration: none;
+ }
+
+.menu-item {
+    float: left;
+    font-size: 30px;
+    margin-right: 20px;
+}
+.menu-item:last-child {
+    margin-right: 0;
+}
+
+.menu-link:hover {
+    color: #fff;
+}
+
+.menu-link {
+    color: #000;
+    display: block;
+    line-height: 58px;
+}
+
+.card {
+    width: 200px;
+    height: 322px;
+    background-color: yellow;
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.card:nth-last-child(-n+4) {
+    margin-bottom: 0;
+}
+
+.card:nth-child(4n) {
+    margin-right: 0;
+}
+
+.name, .price {
+    height: 30px;
+    background-color: red;
+    float: left;
+    width: 150px;
+}
+
+.price {
+    background-color: green;
+    width: 50px;
+}
+
+.card:hover .name {
+    background-color: blue;
+}
+.card:hover .price {
+    background-color: black;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+.title:after {
+    content: '';
+    width: 100px;
+    height: 5px;
+    background-color: green;
+    display: block;
+    margin: 20px auto 0;
+}
+
+.products {
+    margin-bottom: 50px ;
+}
+
+article {
+    width: 300px;
+    height: 500px;
+    background-color: brown;
+    float: left;
+    margin-right: 30px;
+}
+
+article:last-child {
+    margin-right: 0;
+}
