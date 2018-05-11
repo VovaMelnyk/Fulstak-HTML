@@ -1,7 +1,10 @@
 :root {
     --box1: red;
-    --box2: lightgreen;
+    --box2: blue;
     --box3: #dba36a;
     --box4: #65afff;
     --test: 20px;
+    --var: auto;
+    --mainColor: #000;
+    --mainFont: 'Times New Roman', serif;
 }
