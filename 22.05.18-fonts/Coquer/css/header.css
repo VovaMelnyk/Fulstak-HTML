@@ -1,0 +1,38 @@
+.wrapper {
+    background-color: #383E4C;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.header {
+    padding: 10px 0;
+}
+
+/*.nav {*/
+    /*display: flex;*/
+    /*justify-content:center;*/
+/*}*/
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    width: 65%;
+    margin: auto;
+}
+
+.menu-link {
+    display: block;
+    padding: 15px 25px;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    border: 1px solid #646d7c;
+    transition: .5s;
+}
+
+.menu-link:hover {
+    background-color: #49505F;
+}

@@ -1,0 +1,110 @@
+.wrapper-card {
+    background-color: #fff;
+    padding: 70px 0;
+}
+
+.section-card-first {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.card {
+    flex-basis: 30%;
+    background-color: lemonchiffon;
+}
+
+.pic, .art-pic {
+    display: block;
+    margin: auto;
+}
+
+.info {
+    padding: 20px 20px 40px 20px;
+
+}
+
+.card-title {
+    font-family: "Open Sans",sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.card-title-green {
+    color: #178A27;
+}
+
+.card-title-blue {
+    color: #1686C1;
+}
+
+.card-title-grey {
+    color: #666666;
+}
+
+.card-text {
+    color: #333333;
+    font-size: 14px;
+    font-family: "Open Sans",sans-serif;
+    line-height: 1.6rem;
+    margin-bottom: 30px;
+}
+
+.card-btn {
+    display: block;
+    padding: 10px 30px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    text-transform: capitalize;
+    margin: auto;
+    border: none;
+}
+
+.card-btn-green {
+    background-color: #178A27;
+}
+
+.card-btn-blue {
+    background-color: #31B0D5;
+}
+
+.card-btn-brown {
+    background-color: #852406;
+}
+
+.section-card-second {
+    display: flex;
+    justify-content: space-between;
+}
+
+.article {
+    flex-basis: 47%;
+    background-color: lemonchiffon;
+}
+
+.art-info {
+    padding: 20px 27px 27px;
+}
+
+.art-title {
+    color: #666666;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Open Sans",sans-serif;
+    text-align: center;
+    margin-bottom: 27px;
+}
+
+.art-btn {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    color: #666666;
+    font-size: 18px;
+    padding: 10px 30px;
+    display: block;
+    margin-left: auto;
+}
