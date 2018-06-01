@@ -1,0 +1,29 @@
+.wrapper {
+    background-color: #fff;
+}
+
+.header {
+    padding: 1rem 0;
+}
+
+.nav {
+    display: none;
+}
+
+.logo {
+    font-size: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav {
+        display: flex;
+        flex-basis: 40%;
+        justify-content: space-around;
+    }
+}
