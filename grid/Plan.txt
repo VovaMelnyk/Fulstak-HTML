@@ -1,0 +1,44 @@
+Базовые знания
+CSS свойства Grid
+Для контейнера
+                        display:
+                        grid-template-rows:
+                        grid-template-columns:
+                        grid-template-areas:
+                        grid-template:
+                        repeat() — функция
+                        minmax() — функция
+                        auto-fit
+                        grid-row-gap:
+                        grid-column-gap:
+                        grid-gap:
+                        for cels
+                        align-content:
+                        justify-content:
+                        place-content: (both 2 top)
+                        for elem in cels
+                        align-items:
+                        justify-items:
+                        place-items: (both 2 top)
+                        grid-auto-rows:
+                        grid-auto-columns:
+                        grid-auto-flow:
+                        grid:
+Для элементов
+                        grid-row-start:
+                        grid-row-end:
+                        grid-column-start:
+                        grid-column-end:
+                        grid-row:
+                        grid-column:
+                        grid-area:
+                        align-self:
+                        justify-self:
+                        place-self:
+Примеры
+# Каркас HTML страницы
+# Каркас для игрового приложения
+# Простой блок на Grid
+# Масонри на Грид
+Сравнение Flex и Grid
+Поддержка браузерами

@@ -1,0 +1,285 @@
+/*https://wp-kama.ru/wp-content/uploads/2018/05/struktura-grid-setki.png*/
+
+/*https://jsfiddle.net/kamaev/gxbtay54/?utm_source=website&utm_medium=embed&utm_campaign=gxbtay54*/
+
+/*Контейнер - содержит Grid сетку, в которой находятся элементы.*/
+
+/*Элементы — HTML элементы внутри сетки. Ими станут HTML элементы первого уровня (прямые дети контейнера). Чтобы элемент появился в сетке, в нем (внутри) элемента должно быть хоть что-то (текст, другие HTML теги).*/
+/*Линии — это образные линии (на самом деле никаких линий нет), разделяющие сетку на колонки и ряды, они создают структуру сетки. Линии автоматически нумеруются. Также линиям можно указывать имена, чтобы потом прикреплять к ним элементы по номеру или по имени линии. */
+
+/*Ряд/колонка (row/column, track) — все что находится между соседними линиями, т.е. линии разделяют сетку на ряды и колонки.*/
+
+/*Ячейка (cell) — место куда будет расположен элемент. Ячейка это пересечение колонки и ряда.*/
+
+/*Область (area, поле) — объединение одной или нескольких ячеек в общую ячейку (поле). Это такая большая ячейка также ограниченная линиями. Области можно задать имя, чтобы удобно было помещать туда элементы.*/
+
+/*Разрыв (gap) — расстояние между рядами и колонками. Разрывает линию на две. Так между линиями, а как следствие и колонками/рядами, ячейками появляется пустое место.*/
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.box {
+    font-size: 2rem;
+    color: #ffeead;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:nth-child(1n) {
+    background-color: #96ceb4;
+}
+
+.box:nth-child(3n) {
+    background-color: #88d8b0;
+}
+
+.box:nth-child(2n) {
+    background-color: #ff6f69;
+}
+
+.box:nth-child(4n) {
+    background-color: #ffcc5c;
+}
+
+/*display*/
+
+/*.container {*/
+/*height: 100vh;*/
+/*display: grid;*/
+/*grid-template-columns: 100px 1.5fr 2fr;*/
+/*grid-template-rows: 2fr 1fr;*/
+/*!*grid-row-gap: 50px;*!*/
+/*!*grid-column-gap: 10px;*!*/
+/*grid-gap: 10px 50px;*/
+/*!*grid-template-columns: 100px auto 100px;*!*/
+/*!*grid-template-rows: 50px 50px;*!*/
+/*!*grid-gap: 10px;*!*/
+/*}*/
+
+/*.container {*/
+/*display: grid;*/
+/*grid-template-columns: 100px auto;*/
+/*grid-template-rows: 50px 50px 200px;*/
+/*grid-gap: 3px;*/
+/*}*/
+
+/*.container {*/
+/*display: grid;*/
+/*!*grid-template-columns: 100px auto;*!*/
+/*!*grid-template-rows: 50px 50px 200px;*!*/
+/*!*grid-template: grid-template-rows / grid-template-columns;*!*/
+/*grid-template: 50px 50px 200px / 100px auto;*/
+/*grid-gap: 3px;*/
+/*}*/
+
+/*fractions repeat*/
+/*.container {*/
+/*display: grid;*/
+/*!*grid-template-columns: 100px 100px 100px;*!*/
+/*!*grid-template-columns: repeat(3, 0.5fr 1fr 2fr);*!*/
+/*!*grid-template-columns: 1fr 1fr 1fr;*!*/
+/*!*grid-template-columns: 1fr 2fr 1fr;*!*/
+/*!*grid-template-columns: repeat(3, 1fr);*!*/
+/*!*grid-template-columns: repeat(6, 1fr);*!*/
+/*!*grid-template-rows: repeat(2, 150px);*!*/
+/*!*grid-template-rows: repeat(2, 50px);*!*/
+/*grid-template: repeat(2, 50px) / repeat(3, 100px);*/
+/*grid-gap: 3px;*/
+/*}*/
+
+/*position*/
+
+/*.container {*/
+/*display: grid;*/
+/*grid-gap: 10px;*/
+/*!*grid-template-columns: repeat(2, 1fr);*!*/
+/*!*grid-template-columns: 1fr 4fr;*!*/
+/*grid-template-columns: repeat(10, 1fr);*/
+/*grid-template-rows: 40px 200px 40px;*/
+/*}*/
+
+/*.header {*/
+/*!*grid-column-start: 1;*!*/
+/*!*grid-column-end: -1;*!*/
+/*!*grid-column: 1 / -1;*!*/
+/*grid-column: 2/-1;*/
+/*!*grid-column: 1/-2;*!*/
+/*}*/
+
+/*.menu {*/
+/*!*grid-row: 1/3;*!*/
+/*!*!*grid-row: 1/4;*!*/
+/*!**! !*!*grid-column: -2;*! *!*!*/
+/*grid-row: 1/ -1;*/
+/*}*/
+
+/*.content {*/
+/*grid-column: 2/-1;*/
+/*}*/
+
+/*.footer {*/
+/*!*grid-column: 2 / span 5;*!*/
+/*grid-column: 2/-1;*/
+/*!*grid-column: 1/-2;*!*/
+
+/*}*/
+
+/*areas rect only*/
+
+/*.container {*/
+/*min-height: 100vh;*/
+/*display: grid;*/
+/*grid-gap: 3px;*/
+/*grid-template-columns: repeat(12, 1fr);*/
+/*grid-template-rows: 40px auto 40px;*/
+/*grid-template-areas:*/
+/*'h h h h h h h h h h h h'*/
+/*'m m c c c c c c c c c c'*/
+/*'m m f f f f f f f f f f';*/
+/*}*/
+
+/*.header {*/
+/*grid-area: h;*/
+/*}*/
+
+/*.menu {*/
+/*grid-area: m;*/
+/*}*/
+
+/*.content {*/
+/*grid-area: c;*/
+/*}*/
+
+/*.footer {*/
+/*grid-area: f;*/
+/*}*/
+
+/*autofit and minmax()*/
+
+/*.container {*/
+/*display: grid;*/
+/*grid-gap: 5px;*/
+/*height: 100vh;*/
+/*grid-template: repeat(3, minmax(100px, 1fr)) / repeat(5, minmax(100px, 300px));*/
+/*!*grid-template-columns: repeat(4, 1fr);*!*/
+/*!*grid-template-columns: repeat(auto-fit, 100px);*!*/
+/*!*grid-template-columns: repeat(auto-fit, 100px);*!*/
+/*!*grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));*!*/
+/*!*grid-template-rows: repeat(2, 100px);*!*/
+/*!*grid-template-rows: repeat(auto-fit, 200px);*!*/
+/*}*/
+
+/*Implicit rows*/
+/*.container {*/
+/*display: grid;*/
+/*height: 100vh;*/
+/*grid-gap: 5px;*/
+/*grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));*/
+/*grid-template-rows: 100px 100px;*/
+/*grid-auto-rows: 1fr;*/
+/*}*/
+
+/*gallery*/
+
+/*.container {*/
+/*display: grid;*/
+/*grid-gap: 10px;*/
+/*grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));*/
+/*grid-auto-rows: 75px;*/
+/*grid-auto-flow: dense;*/
+/*}*/
+
+/*img {*/
+/*width: 100%;*/
+/*height: 100%;*/
+/*object-fit: cover;*/
+/*}*/
+
+/*.horizontal {*/
+/*!*grid-column: 1 / span 2;*!*/
+/*!*grid-column: auto / span 2;*!*/
+/*grid-column: span 2;*/
+/*}*/
+
+/*.vertical {*/
+/*grid-row: span 2*/
+/*}*/
+
+/*.big {*/
+/*grid-row: span 2;*/
+/*grid-column: span 2;*/
+/*}*/
+
+/*named lines*/
+
+/*.container {*/
+/*height: 100vh;*/
+/*display: grid;*/
+/*grid-gap: 3px;*/
+/*!*grid-template-columns: 1fr 5fr;*!*/
+/*!*grid-template-columns: 1fr [content-start] 5fr [content-end];*!*/
+/*grid-template-columns: [main-start] 1fr [content-start] 5fr [content-end main-end];*/
+/*!*grid-template-rows: 40px auto 40px;*!*/
+/*grid-template-rows: [main-start] 40px [content-start] auto [content-end] 40px [main-end];*/
+/*}*/
+
+/*.header {*/
+/*!*grid-column: 1 / 3;*!*/
+/*!*grid-column: main-start / main-end;*!*/
+/*grid-column: main;*/
+/*}*/
+
+/*.menu {}*/
+
+/*.content {*/
+/*!*grid-column: 2 / 3;*!*/
+/*!*grid-column: content-start / content-end;*!*/
+/*grid-column: content;*/
+/*}*/
+
+/*.footer {*/
+/*!*grid-column: 1 / 3;*!*/
+/*!*grid-column: main-start / main-end;*!*/
+/*grid-column: main;*/
+/*}*/
+
+/*justify-content and align-content*/
+
+/*.container {*/
+/*border: 5px solid black;*/
+/*height: 100vh;*/
+/*display: grid;*/
+/*grid-gap: 5px;*/
+/*grid-template-columns: repeat(3, 100px);*/
+/*grid-template-rows: repeat(2, 100px);*/
+/*!*justify-content: flex-end;*!*/
+/*justify-content: center;*/
+/*align-content: center;*/
+/*!*justify-content: space-between;*!*/
+/*!*align-content: space-between;*!*/
+/*}*/
+
+/*atf atfl*/
+
+/*.container {*/
+    /*border: 1px solid black;*/
+    /*display: grid;*/
+    /*grid-gap: 5px;*/
+    /*grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));*/
+    /*grid-template-rows: 100px 100px;*/
+/*}*/
+
+/*.container2 {*/
+    /*border: 1px solid black;*/
+    /*display: grid;*/
+    /*grid-gap: 5px;*/
+    /*grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));*/
+    /*grid-template-rows: 100px 100px;*/
+/*}*/
