@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 2rem;
+    background-color: #eee;
+}
+
+ul {
+    list-style: none;
+}
+
+.list__item {
+    width: 24px;
+    height: 24px;
+    /*background-color: #000000;*/
+    display: inline-block;
+    transition: 5s;
+}
+
+/*.like {*/
+    /*background: url('../img/css_sprites.png') -54px -10px;*/
+/*}*/
+
+/*.like:hover {*/
+    /*background: url('../img/css_sprites.png') -98px -10px;*/
+/*}*/
+
+/*.heart {*/
+    /*background: url('../img/css_sprites.png') -10px -10px;*/
+/*}*/
+
+/*.heart:hover {*/
+    /*background: url('../img/css_sprites.png') -142px -10px;*/
+/*}*/
+
+/*.like {*/
+    /*width: 24px; height: 24px;*/
+    /*background: url('../img/css_sprites (1).png') -10px -10px;*/
+/*}*/
+
+/*.like:hover {*/
+    /*width: 24px; height: 24px;*/
+    /*background: url('../img/css_sprites (2).png') -10px -10px;*/
+/*}*/
+
+#svg {
+    display: none;
+}
+
+.icons-container {
+    text-align: center;
+}
+
+.icon {
+    width: 8rem;
+    height: 8rem;
+    cursor: pointer;
+    fill: #1EA896;
+}
+
+.icon:hover {
+    fill: #FF715B;
+}
+
+
+
+/*.box {*/
+/*width: 480px;*/
+/*height: 320px;*/
+/*background: url(../img/tree.jpg) no-repeat;*/
+/*}*/
+
+
+/*@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {*/
+/*.box {*/
+/*background: url('../img/tree@2x.jpg') no-repeat;*/
+/*}*/
+/*}*/
