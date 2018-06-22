@@ -1,0 +1,15 @@
+@function rem($px, $size) {
+  $result: $px / $size;
+  @return #{$result}rem;
+}
+@function prc($el, $container){
+  $result: $el / $container * 100%;
+  @return #{$result};
+}
+
+$titleColor: #333;
+$textColor: #777;
+$footerTitleColor: #fff;
+$titleFontSize: 1.625rem;
+$textFontSize: 1rem;
+$fontFamily: 'Merriweather', serif;
