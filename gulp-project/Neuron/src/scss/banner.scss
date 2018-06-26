@@ -1,0 +1,13 @@
+.banner {
+  padding: rem(70) 0;
+}
+
+@media (min-width: 1024px) {
+  .banner {
+    padding: rem(176) 0;
+  }
+
+  .title {
+    font-size: 3.875rem;
+  }
+}

@@ -1,0 +1,35 @@
+.nav {
+  display: none;
+}
+
+.header {
+  padding: 2rem 0;
+}
+
+.logo {
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #555555;
+  letter-spacing: 0.25rem;
+}
+
+
+@media (min-width: 768px) {
+  .nav {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: space-around;
+
+    &__link {
+      text-transform: capitalize;
+      color: $textColor;
+      font-family: $fontFamily;
+    }
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+}

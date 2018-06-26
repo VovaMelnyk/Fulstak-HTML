@@ -1,0 +1,20 @@
+
+.gallery {
+  margin: rem(32) 0 rem(20);
+}
+
+@media (min-width: 768px) {
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+
+    &__item {
+      flex-basis: 50%;
+      flex-grow: 1;
+
+      &:last-child {
+        flex-grow: 2;
+      }
+    }
+  }
+}

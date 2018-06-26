@@ -1,0 +1,12 @@
+.wrapper {
+  background-color: #fff;
+
+  &--gallery-banner {
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('../img/gallery-bg.jpg');
+    @include bg-banner;
+  }
+
+  &--black {
+    background-color: #000;
+  }
+}

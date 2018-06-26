@@ -1,5 +1,5 @@
-@function rem($px, $size) {
-  $result: $px / $size;
+@function rem($px) {
+  $result: $px / 16;
   @return #{$result}rem;
 }
 @function prc($el, $container){
@@ -13,3 +13,14 @@ $footerTitleColor: #fff;
 $titleFontSize: 1.625rem;
 $textFontSize: 1rem;
 $fontFamily: 'Merriweather', serif;
+
+@mixin bg-banner {
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+
+

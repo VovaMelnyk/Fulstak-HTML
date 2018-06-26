@@ -1,0 +1,51 @@
+.container {
+  min-width: rem(320);
+  max-width: rem(760);
+  margin: auto;
+  padding: 0 rem(16);
+}
+
+.title {
+  color: #ffffff;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 2.625rem;
+  font-family: $fontFamily;
+}
+
+.main-title {
+  font-size: $titleFontSize;
+  color: $titleColor;
+  font-weight: 700;
+  text-transform: capitalize;
+  letter-spacing: 0.03rem;
+  font-family: $fontFamily;
+  margin-bottom: 1rem;
+}
+
+.text {
+  color: $textColor;
+  font-size: $textFontSize;
+  line-height: $titleFontSize;
+  font-family: $fontFamily;
+  margin-bottom: rem(10);
+
+  &--last {
+    margin-bottom: 0;
+  }
+
+  &--center {
+    text-align: center;
+  }
+}
+
+.main {
+  padding: rem(60) 0;
+}
+
+
+@media (min-width: 1024px) {
+  .main-title {
+    font-size: 2rem;
+  }
+}
