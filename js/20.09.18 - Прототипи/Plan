@@ -1,0 +1,45 @@
+1) Клас
+2) Обєкт
+3) Интерфейс
+4) Абстракція
+5) Інкапсуляція
+6) Наслідування
+7) Полиморфизм
+Приклади в коді ?
+8) Прототип
+9) obj create
+10) Без прототипа
+11) prototype
+12) constructor
+13) function factory
+14) ES class
+15) get set
+16) Static method and values
+17) Наслідування
+18)
+
+.app-ctrls {
+  display: inline-flex;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  font-size: 1.1rem;
+}
+
+.app-ctrls__select {
+  padding: 0.5rem;
+  font-size: inherit;
+}
+
+.app-ctrls__btn {
+  padding: 0.75rem 1rem;
+  font-size: inherit;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  background-color: #0E79B2;
+  color: #FBFEF9;
+}
+
+.app-ctrls__btn:hover {
+  background-color: #E88D67;
+}
