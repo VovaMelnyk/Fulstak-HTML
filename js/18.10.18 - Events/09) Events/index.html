@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Events</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .btn {
+            display: inline-block;
+            font-size: 20px;
+            text-transform: uppercase;
+            color: #000;
+            padding: 10px;
+            transition: 1s;
+        }
+
+        .boss, .zam, .manager, .worker {
+            text-align: center;
+            font-size: 20px;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .boss {
+            margin-top: 20px;
+            width: 500px;
+            height: 500px;
+            background-color: red;
+        }
+
+        .zam {
+            width: 460px;
+            height: 400px;
+            background-color: yellowgreen;
+        }
+
+        .manager {
+            width: 430px;
+            height: 300px;
+            background-color: brown;
+        }
+
+        .worker {
+            width: 360px;
+            height: 200px;
+            background-color: #fff;
+        }
+
+        /* input {
+            display: block;
+            width: 300px;
+            margin-bottom: 1rem;
+        } */
+
+        input:last-child {
+            margin-bottom: 0;
+        }
+
+        textarea {
+            display: block;
+            width: 300px;
+            height: 150px;
+            resize: none;
+            margin-bottom: 1rem;
+        }
+
+        .post {
+            background-color: lemonchiffon;
+            margin-bottom: 1rem;
+        }
+
+        h2 {
+            font-size: 20px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 16px;
+            color: #000;
+        }
+
+        form {
+            margin-bottom: 20px;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <form action="#" method="POST">
+        <input type="text" id="name" name="name" placeholder="name" required>
+        <input type="text" id="lastName" name="lastName" placeholder="lastName" required>
+        <!-- <label>
+            <input type="radio" name="gender" id="Male">Male
+        </label>
+        <label>
+            <input type="radio" name="gender" id="Female">Female
+        </label> -->
+        <button type="submit">Send data</button>
+    </form>
+    <!-- <button class="btn" id="one">One Listener</button> -->
+    <!-- <button class="btn" id="many">Many Listeners</button>
+
+    <!--bubbling-->
+    
+    <!-- <div class="boss"> Boss
+        <div class="zam"> Zam
+            <div class="manager">Manager
+                <div class="worker">Worker</div>
+            </div>
+        </div>
+    </div>  -->
+        
+    <!-- <ul class="list">
+        <li class="item">Item 1</li>
+        <li class="item">Item 2</li>
+        <li class="item">Item 3</li>
+        <li class="item">Item 4</li>
+        <li class="item">Item 5</li>
+    </ul> -->
+
+    <!--<button class="btn" id="h1">Create h1</button>-->
+    <!--<button class="btn" id="p">Create p</button>-->
+    <!--<button class="btn" id="ul">Create ul</button>-->
+    <!--<button class="btn" id="img">Create img</button>-->
+    <!--<section id="root">-->
+
+    <!--</section>-->
+    <!--<ul>-->
+    <!--<li>Item</li>-->
+    <!--<li>Item</li>-->
+    <!--<li>Item</li>-->
+    <!--<li>Item</li>-->
+    <!--<li>Item</li>-->
+    <!--<li>Item</li>-->
+    <!--</ul>-->
+    <!--<div id="root"></div>-->
+    <!--<form action="123">-->
+    <!--<input type="text" class="title" placeholder="title">-->
+    <!--<textarea name="" id="" class="msg" placeholder="msg"></textarea>-->
+    <!--<input type="submit" value="Send" class="send">-->
+    <!--</form>-->
+    <!--<div class="container">-->
+    <!--<h2 class="title">Скільки коштує мясо на шашлики?</h2>-->
+    <!--<form action="#" class="form">-->
+    <!--<label for="price">Ціна грн</label>-->
+    <!--<input type="text" id="price" name="price" value="120.68">-->
+    <!--<label for="quantity">Кількість<span class="amount">1</span>кг </label>-->
+    <!--<input type="range" id="quantity" name="quantity" value="1" min="1", max="20">-->
+    <!--</form>-->
+    <!--<p class="text-right total"></p>-->
+    <!--</div>-->
+    <script src="index.js"></script>
+</body>
+
+</html>

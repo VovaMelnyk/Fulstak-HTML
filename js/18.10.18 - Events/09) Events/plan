@@ -1,0 +1,51 @@
+input value
+checkbox value
+
+addEventListener и removeEventListener
+
+event.type
+event.currentTarget
+event.target
+event.stopPropagation().
+stopImmediatePropagation()
+Делегирование
+
+
+
+event.preventDefault().
+DOMContentLoaded
+
+
+///////////////////////////////////////////////////////////////////////////////
+
+mousedown - кнопка мыши нажата над элементом.
+mouseup - кнопка мыши отпущена над элементом.
+mouseover - курсор мыши появился над элементом.
+mouseout - курсор мыши ушел с элемента.
+mousemove - каждое движение мыши над элементом генерирует это событие.
+
+//////////////////////////////////////////////////////////////////////////////
+
+click - Вызывается при клике мышью, то есть при mousedown, а затем mouseup на одном элементе
+contextmenu - Вызывается при клике правой кнопкой мыши на элементе.
+dblclick - Вызывается при двойном клике по элементу.
+
+///////////////////////////////////////////////////////////////////////////////
+
+clientX/clientY
+
+//////////////////////////////////////////////////////////////////////////////
+
+keydown и keyup
+keypress
+
+focus/blur
+scroll
+pageXOffset
+pageYOffset
+
+elem.offsetWidth
+elem.offsetHeight
+
+elem.clientWidth
+elem.clientHeight
