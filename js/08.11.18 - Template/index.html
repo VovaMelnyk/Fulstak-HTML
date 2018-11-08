@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Temp</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            padding: 0.5rem;
+        }
+
+        .gallery {
+            max-width: 900px;
+            padding: 0.5rem;
+            margin: auto;
+            box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
+        }
+
+        .gallery-title {
+            margin-bottom: 1rem;
+        }
+
+        .gallery-content {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+        }
+
+        .gallery-item {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: 0 1 33%;
+            margin-bottom: 0.5rem;
+
+            /*&*/
+            /*:nth-last-child(-n + 3) {*/
+            /*margin-bottom: 0;*/
+            /*}*/
+
+        }
+
+        .gallery-img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            filter: grayscale(0.5);
+        }
+
+        .gallery-text {
+            margin: 0;
+            position: absolute;
+            color: #fefefe;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <!-- <div class="content-placeholder"></div> -->
+
+    <!-- <template id="address-template">
+<p>You can find me in {{city}}. My address is {{number}} {{street}}.</p>
+</template> -->
+
+    <!-- <div class="content-placeholder"></div>
+
+<template id="example-template">
+
+{{#each people}}
+<p>{{firstName}} {{lastName}}</p>
+{{/each}}
+</template> -->
+
+
+    <!-- <div id="menu-container"></div>
+
+
+
+<template id='menu'>
+    <div>
+        <h1>{{title}}</h1>
+        <ul>
+            {{#each items}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+    </div>
+</template> -->
+
+    <!-- <template id="built-in-helpers-template">
+        {{#each animals}}
+        <p>
+            The {{name}} says
+            {{#if noise}}
+            "{{noise}}".
+            {{else}}
+            nothing since its a {{name}}.
+            {{/if}}
+        </p>
+        {{/each}}
+    </template>
+
+    <div class="content-placeholder"></div> -->
+    <div class="gallery"></div>
+
+    <template id=gallery>
+            <h2 class="gallery-title">{{title}}</h2>
+            <div class="gallery-content">
+                {{#each items}}
+                <div class="gallery-item">
+                    <img class="gallery-img" src={{img}} alt={{text}}>
+                    <p class="gallery-text">{{text}}</p>
+                </div>
+                {{/each}}
+            </div>
+    </template>
+
+    <!--Gallery-->
+    <!-- <div class="gallery">
+    <div class="gallery-content"></div>
+</div>
+
+<h2 class="gallery-title"></h2>
+<div class="gallery-item">
+    <img class="gallery-img" src="" alt="">
+    <p class="gallery-text"></p>
+</div> -->
+
+
+
+
+    <!-- <script type="hbs/template" id="gallery-item">
+        <div class="gallery-item">
+    <img class="gallery-img" src="{{img}}" alt="{{text}}">
+    <p class="gallery-text">{{text}}</p>
+    </div>
+    </script> -->
+    <!--<input type="text">-->
+    <!--<button class="btn">Find</button>-->
+
+    <!--<div class="container">-->
+
+    <!--</div>-->
+    <!--<ul class="list">-->
+    <!--<li class="item">-->
+    <!--<p class="name"></p>-->
+    <!--<span class="count"></span>-->
+    <!--</li>-->
+    <!--</ul>-->
+
+    <!-- <div class="module-card-bottom">
+    <img src="http://placehold.it/400x200" alt="cheesecake" class="module-card-img"/>
+
+    <div>
+        <h2>Title</h2>
+        <p>Price</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea ipsum sit perspiciatis iusto commodi nihil
+            tenetur veritatis adipisci sed? Illo nobis similique in facilis libero ab officia ratione nesciunt
+            fugiat.</p>
+    </div>
+
+    <button class="module-card-button">See More</button>
+</div>
+
+<div class="container"></div> -->
+
+    <!--<script id="card" type="hdb/templ">-->
+    <!--<div class="module-card-bottom">-->
+    <!--<img src="{{image}}" alt="{{name}}" class="module-card-img"/>-->
+    <!--<div>-->
+    <!--<p>{{name}}</p>-->
+    <!--<p>{{description}}</p>-->
+    <!--<p class="price">{{price}} $</p>-->
+    <!--<div class="hide">-->
+    <!--<p><b>CPU</b> {{cpu}}</p>-->
+    <!--<p><b>CAMERA</b> {{camera}}</p>-->
+    <!--<p><b>SIZE</b> {{size}}</p>-->
+    <!--<p><b>WEIGHT</b> {{weight}}</p>-->
+    <!--<p><b>DISPLAY</b> {{display}}</p>-->
+    <!--<p><b>BATTERY</b> {{battery}}</p>-->
+    <!--<p><b>MEMORY</b> {{memory}}</p>-->
+    <!--</div>-->
+    <!--</div>-->
+
+    <!--<button class="module-card-button">See More</button>-->
+    <!--</div>-->
+
+
+    <!--</script>-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+    <script src="index.js"></script>
+    <!--<script src="https://apis.google.com/js/client.js?onload=init"></script>-->
+</body>
+
+</html>
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--<meta charset="UTF-8">-->
+<!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--<meta http-equiv="X-UA-Compatible" content="ie=edge">-->
+<!--<link rel="stylesheet" href="css/style.css">-->
+<!--<title>Document</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--&lt;!&ndash; <div class="container"> </div>-->
+<!--<button class='apple'>choose apple</button>-->
+<!--<button class='all-phones'>all phones</button> &ndash;&gt;-->
+<!--<form class="form js-form">-->
+<!--<section>-->
+<!--<h2>Screen size</h2>-->
+<!--<ul>-->
+<!--<li><label><input type="checkbox" name="size" value="13"> 13"</label></li>-->
+<!--<li><label><input type="checkbox" name="size" value="15"> 15"</label></li>-->
+<!--<li><label><input type="checkbox" name="size" value="17"> 17"</label></li>-->
+<!--</ul>-->
+<!--</section>-->
+<!--<section>-->
+<!--<h2>Color</h2>-->
+<!--<ul>-->
+<!--<li><label><input type="checkbox" name="color" value="white"> white</label></li>-->
+<!--<li><label><input type="checkbox" name="color" value="gray"> gray</label></li>-->
+<!--<li><label><input type="checkbox" name="color" value="black"> black</label></li>-->
+<!--</ul>-->
+<!--</section>-->
+<!--<section>-->
+<!--<h2>Release date</h2>-->
+<!--<ul>-->
+<!--<li><label><input type="checkbox" name="releaseDate" value="2015"> 2015</label></li>-->
+<!--<li><label><input type="checkbox" name="releaseDate" value="2016"> 2016</label></li>-->
+<!--<li><label><input type="checkbox" name="releaseDate" value="2017"> 2017</label></li>-->
+<!--</ul>-->
+<!--</section>-->
+<!--<button type="submit">Filter</button>-->
+<!--<button type="reset">Clear</button>-->
+<!--</form>-->
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>-->
+<!--<script src="index.js"></script>-->
+<!--</body>-->
+<!--</html>-->
