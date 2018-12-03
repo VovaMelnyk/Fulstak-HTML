@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Notes</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+</head>
+
+<body>
+  <main class="main">
+      <section class="bookmarks__container">
+          <form class="bookmarks__form">
+              <input class="bookmark__input" type="url" placeholder=" Place your url here...">
+              <button class="bookmark-add__button" type="submit">Add</button>
+          </form>
+          <p>Saved URL</p>
+          <ul class="bookmarks__list"></ul>
+      </section>
+      
+  </main>
+  <template id="bookmark__template">
+      <li class="bookmarks__item" id={{id}}>
+          <img class="bookmark__image" src="images/star.jpg" alt="favorite" width="30px">
+          <a class="bokkmark__href" href={{name}}>{{name}}</a>
+          <button class="bookmark-remove__button">Delete</button>
+      </li> 
+         </template>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.min.js"></script>
+         <!-- <script src="js/scripts.min.js"></script> -->
+</body>
+
+</html>
